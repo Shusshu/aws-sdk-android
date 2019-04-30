@@ -2320,7 +2320,7 @@ public class CognitoUser {
      * @param currSession REQUIRED: Current cached {@link CognitoUserSession}.
      * @return {@link CognitoUserSession} with new access and id tokens.
      */
-    private CognitoUserSession refreshSession(CognitoUserSession currSession) {
+    public CognitoUserSession refreshSession(CognitoUserSession currSession) {
         CognitoUserSession cognitoUserSession = null;
         final InitiateAuthRequest initiateAuthRequest = initiateRefreshTokenAuthRequest(
                 currSession);
